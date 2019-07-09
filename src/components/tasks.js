@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
+import AddImage from './addImage';
 
-const API = "http://taskmaster-dev-2.us-west-2.elasticbeanstalk.com/";
+const API = "http://taskmaster-dev-2.us-west-2.elasticbeanstalk.com/"
 // const API =   "http://localhost:5000";
 
 function Tasks(){
@@ -18,19 +19,6 @@ function Tasks(){
 
   return (
     <>
-    {/* <ul>
-      {tasks.map( (task) => 
-        <li key={task.id}>
-          <section>
-              <span>{task.title}</span>
-              <span>{task.description}</span>
-              <span>{task.assignee}</span>
-              <span>{task.status}</span>
-          </section>
-        </li>
-      )}
-      
-    </ul> */}
     <table>
       <tbody>
         <tr>
@@ -45,11 +33,12 @@ function Tasks(){
             <td>{task.description}</td>
             <td>{task.assignee}</td>
             <td>{task.status}</td>
+            <td><AddImage id={task.id}/></td>
           </tr>
           )}
       </tbody>
-     
     </table>
+    
     </>
   );
 }
