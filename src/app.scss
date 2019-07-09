@@ -35,6 +35,15 @@ table{
 }
 
 footer {
+  margin: auto;
+  padding: 15px;
+  input:hover{
+    background-color: #FBEEC1;
+    color: #8D8741;
+  }
+}
+
+footer {
   text-align: center;
   font-size: 15px;
   padding: 15px;
