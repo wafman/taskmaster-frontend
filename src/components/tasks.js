@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from 'react';
 import AddImage from './addImage';
 
-// const API = "http://taskmaster-dev-2.us-west-2.elasticbeanstalk.com/"
-const API =   "http://localhost:5000";
+const API = "http://taskmaster-dev-2.us-west-2.elasticbeanstalk.com/"
+// const API =   "http://localhost:5000/";
 
 function Tasks(){
 
   const [tasks, setTasks] = useState([])
 
   const _getTasks = () => {
-    fetch( API + "/tasks", { mode : 'cors'})
+    fetch( API + "tasks", { mode : 'cors'})
     .then(data => data.json())
     .then(task => setTasks(task))
     .catch(console.error);

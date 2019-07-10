@@ -1,12 +1,12 @@
 import React from 'react';
 
-// const API = "http://taskmaster-dev-2.us-west-2.elasticbeanstalk.com/"
-const API =   "http://localhost:5000";
+const API = "http://taskmaster-dev-2.us-west-2.elasticbeanstalk.com/"
+// const API =   "http://localhost:5000/";
 
 class AddTask extends React.Component{
   render(){
     return(
-      <form action={API + "/tasks"} method="post" encType="multipart/form-data">
+      <form action={API + "tasks"} method="post" encType="multipart/form-data">
         <input type="text" name="title" placeholder="Title"></input>
         <input type="text" name="description" placeholder="Description"></input>
         <input type="text" name="status" placeholder="Status"></input>
