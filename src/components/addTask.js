@@ -1,8 +1,8 @@
 import React from 'react';
 
-const API = "http://taskmaster-dev-2.us-west-2.elasticbeanstalk.com/"
+// const API = "http://taskmaster-dev-2.us-west-2.elasticbeanstalk.com/"
 
-// const API =   "http://localhost:5000";
+const API =   "http://localhost:5000/";
 
 
 class AddTask extends React.Component{
@@ -13,7 +13,7 @@ class AddTask extends React.Component{
         <input type="text" name="description" placeholder="Description"></input>
         <input type="text" name="status" placeholder="Status"></input>
         <input type="text" name="assignee" placeholder="Assignee"></input>
-        <input type="file" name="pic"></input>
+        <input type="file" name="file"></input>
         <input type="submit" name="submit"></input>
       </form>
     )
